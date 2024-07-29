@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+</head>
+<body>
+    <h1>Cart</h1>
+    <ul id="cart-items">
+        <!-- Cart items will be displayed here -->
+    </ul>
+    <script>
+        const cartItems = JSON.parse(localStorage.getItem('cartItems'));
+        const cartList = document.querySelector('#cart-items');
+
+        cartItems.forEach((item) => {
+            const cartItem = document.createElement('li');
+            cartItem.textContent = `${item.name} - ${item.price}`;
+            cartList.appendChild(cartItem);
+        });
+    </script>
+</body>
+</html>

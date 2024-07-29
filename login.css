@@ -1,0 +1,67 @@
+:root {
+  --clr1: #f95b11;
+  --clr2: #fff;
+  --clr3: #000;
+  --clr4:#FF9999;
+  --clr5: limegreen;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  background-image: url("woodbg.avif");
+}
+
+.login {
+  width: 500px;
+  background-color: var(--clr4);
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 60px auto;
+}
+
+.input-field {
+  margin-bottom: 25px;
+}
+
+.input-field i {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.input-field input[type="text"], .input-field input[type="password"] {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: rgb(222, 215, 215);
+}
+
+input[type="submit"] {
+  background-color: #000000;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color:rgb(76, 73, 73);;
+}
+
+p {
+  margin-top: 20px;
+}
+
+p a {
+  text-decoration: none;
+  color: #171817;
+  font-style: italic;
+}
+
+p a:hover {
+  color: #2f302f;
+
+}
